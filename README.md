@@ -46,6 +46,8 @@ That's where these 3D prints come in: The 3D printed lens holders snap into thes
 
 To get the special "shapes" of the spotlights (rounded triangles at the front for the top of the saucer, ellipses at the rear for the nacelles), my system uses [gobos](https://en.wikipedia.org/wiki/Gobo_(lighting)) to create the shapes. The gobos in this case are black vinyl stickers, cut to shape on a Cricut machine.
 
+I'm using four spotlight assemblies on the top side of my model, one spotlight each: Saucer top front, saucer top rear, warp pylon starbord top, and inboard starboard warp nacelle.
+
 ### Lower Spotlights:
 
 My Refit Enterprise is the Tomy brand die-cast replica, released in 2026. That model comes with a special display stand which includes three LED sconces which already light the model from below. I merely needed to add some lenses to the base, to focus their LEDs a little more.
