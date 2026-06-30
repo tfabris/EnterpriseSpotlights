@@ -169,9 +169,10 @@ Mirror the Left Unit
   - A perfect mirror copy of the object should now be sitting next to the 
 - Repeat the mirroring procedure for all three objects (base, front tube, back tube).
 
--------------------------------------------------------------------
-Tube angles at time of this writing (might be changed, check this):
--------------------------------------------------------------------
+--------------------------------------------------------------------
+Tube angles at time of this writing (might be changed, check these):
+--------------------------------------------------------------------
+
 Center light tubes:
 Center front:
 -65 degrees X axis
@@ -185,21 +186,24 @@ Left back:
 +16 degrees X axis, +6 degrees Y axis, +8 degrees Z axis
 
 If changing the tube angles, recheck the following:
-- Lenses will not intersect each other physically.
-- Tube cutters are all doing what they are supposed to be doing and nothing is cut less or more than it should be. May have to adjust the bottom polygon of each tube or cutter so that everything works correctly again.
+
+- Before editing, make sure that the "Transform Orientation" menu (top center) is set to "Local". The tube angles must all be locally rotated in their child relationship to the flat tops of the hexagonal bases. 
+- Since the bases are already rotated X=25° for printing, then before editing, rotate the bases to X=0°, then do your editing, then put them back to X=25° for printing again.
+- When editing, ensure the lenses will not intersect each other physically, they are all very close to each other.
+- When editing, ensure the lens tubes and "cutter" parts are all working correctly for all their boolean operations, for example, nothing is cut less or more than it should be (the cutter parts are hidden, and buried in the item hierarchy inside other objects). It may be necessary to adjust the bottom polygon of each tube or cutter, so that everything works correctly again after the angles are changed.
 
 -----------------------
 Exporting for printing:
 -----------------------
 
-Temporarily rotate the bases for the purpose of printing straight to the print bed without any supports:
+Ensure the bases have been rotated correctly, for the purpose of printing straight to the print bed without any supports:
 
 - Select the Base hexagon object for the Center base. Make sure nothing else is selected.
-- In the ITEM panel, edit "Rotation:"" X axis only, 25 degrees.
+- In the ITEM panel, ensure "Rotation:" X axis only, is 25 degrees.
 - This should put the bottom of the hexagon flat parallel with the bottom world plane. The tubes should go along with it if the parenting process was done correctly.
 - Repeat this for the Left base. Its mirror should follow along as well.
 - Export all the printable objects (two bases and their tubes, plus the mirror of the left base).
-- Export as STL, then UNDO THE ROTATION before saving and closing Blender.
+- Export as STL.
 
 --------
 PRINTING

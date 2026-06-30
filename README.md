@@ -208,8 +208,10 @@ Making Adjustments
 The lower lens holders are not aimable. They have been pre-aimed based on my particular model. I expect that all of the Tomy Enterprises should have the same base shape and LED positions, but there's no way for me to tell if other models will be slightly different. If modifications are needed, change the lens tube angles on the lower spotlights in the original Blender file "Lower Spotlights.blend" (Blender expertise required for this).
 
 If changing the lens tube angles in the Blender file, recheck the following before exporting and reprinting:
-- Ensure the actual inserted lenses will not intersect each other physically. The two lenses are very close together in this design.
-- Ensure the lens tubes and "cutter" parts are all working correctly for all their boolean operations, for example, nothing is cut less or more than it should be (the cutter parts are hidden, and buried in the item hierarchy inside other objects). It may be necessary to adjust the bottom polygon of each tube or cutter so that everything works correctly again after the angles are changed.
+- Before editing, make sure that the "Transform Orientation" menu (top center) is set to "Local". The tube angles must all be locally rotated in their child relationship to the flat tops of the hexagonal bases. 
+- Since the bases are already rotated X=25° for printing, then before editing, rotate the bases to X=0°, then do your editing, then put them back to X=25° for printing again.
+- When editing, ensure the lenses will not intersect each other physically, they are all very close to each other.
+- When editing, ensure the lens tubes and "cutter" parts are all working correctly for all their boolean operations, for example, nothing is cut less or more than it should be (the cutter parts are hidden, and buried in the item hierarchy inside other objects). It may be necessary to adjust the bottom polygon of each tube or cutter, so that everything works correctly again after the angles are changed.
 
 #### Aiming Upper Spotlights:
 
