@@ -21,7 +21,7 @@ When making the movie, the special effects artists lit the Enterprise's hull wit
 
 This means it is nearly impossible to truly self-light a model kit or replica of the Refit Enterprise.
 
-Many have tried. Some clever folks use a trick, commonly known as "Raytheon Lighting" among Enterprise kit builds, where LEDs are strategically positioned within the model's interior, to glow through the white plastic. Unfortunately, this technique causes its own difficulties, and it can't be used for my Tomy die-cast replica. Tomy **did** manage to Raytheon-light their outboard nacelle tips, which is incredibly helpful, since those are the most difficult ones to light.
+Many have tried. Some clever folks use a trick, commonly known as "Raytheon Lighting" among Enterprise kit builders, where LEDs are strategically positioned within the model's interior, to glow through the white plastic. Unfortunately, this technique causes its own difficulties, and it can't be used for my Tomy die-cast replica. Tomy **did** manage to Raytheon-light their outboard nacelle tips, which is incredibly helpful, since those are the most difficult ones to light.
 
 #### My Solution:
 
