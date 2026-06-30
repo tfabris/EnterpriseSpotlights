@@ -91,7 +91,7 @@ Required Materials
   - Power supply and lighting controller. A large variety of options are available to power and control the LED strips. It is a complicated subject; the short version is: I'm using a Mean Well LRS-200-5 200W 5V 40-amp power supply to drive several meters worth of LED strips, and an Arduino Mega 2560 to control them:
     - https://www.amazon.com/dp/B0131V99BA
     - https://www.amazon.com/dp/B07TGF9VMQ
-
+    - ***Note:*** Don't try to drive more than a handful of LEDs "directly" off of an Arduino, without a separate power supply. For LED strips of any length, a proper power supply is required, to prevent frying the Arduino board.
 
 ### Software:
 
