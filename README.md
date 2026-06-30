@@ -203,7 +203,7 @@ Making Adjustments
 
 #### Aiming Lower Spotlights:
 
-The lower lens holders are not aimable. They have been pre-aimed based on my particular model. I expect that all of the Tomy enterprises should have the same base shape and LED positions, but there's no way for me to tell if other models will be slightly different. If modifications are needed, change the lens tube angles on the lower spotlights in the original Blender file "Lower Spotlights.blend" (Blender expertise required for this).
+The lower lens holders are not aimable. They have been pre-aimed based on my particular model. I expect that all of the Tomy Enterprises should have the same base shape and LED positions, but there's no way for me to tell if other models will be slightly different. If modifications are needed, change the lens tube angles on the lower spotlights in the original Blender file "Lower Spotlights.blend" (Blender expertise required for this).
 
 If changing the lens tube angles in the Blender file, recheck the following before exporting and reprinting:
 - Ensure the actual inserted lenses will not intersect each other physically. The two lenses are very close together in this design.
