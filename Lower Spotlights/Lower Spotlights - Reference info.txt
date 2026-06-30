@@ -1,0 +1,212 @@
+-----------------------------------------------------------------------------
+Tomy Refit Enterprise, base light lens focusers, lens holders for 3D printing
+
+             Blender creation notes and reference information
+-----------------------------------------------------------------------------
+                          Lower Spotlight Set
+-----------------------------------------------------------------------------
+
+Designed to fit a set of 15mm x 5mm lenses, similar to these:
+- https://www.amazon.com/dp/B0BR5PMGWD
+- https://www.amazon.com/dp/B0B2X662B8
+
+Outer diameter: 15.08mm
+Inner diameter: 13mm
+Height: 5.8mm
+Side thickness: 1.3mm
+Dome diameter: 13.0402mm
+Lip thickness: 1.81mm
+Focal length: 10mm
+
+Measurement note:
+- All measurements below are in Millimeters in the real world, but in Blender these values will show as Meters. They will be automatically converted to millimeters when the STL file is imported into the slicer. (At least, Chitubox works that way, not sure about others.)
+
+--------------------
+Base hexagon shrouds
+--------------------
+- Outermost vertices diameter: 26.76
+- Wall Thickness: 2
+
+Base Hexagon Creation Steps:
+- Add, Cylinder
+- Radius: 13.38
+- Vertices: 6
+- Depth: 20
+- End caps: N-gon
+- Use edit mode to delete the bottom cap, faces only    
+- Back in object mode, add solidify modifier with thickness of 2
+- APPLY IT.
+- NAMES: "Base Center" "Base Left"
+
+IMPORTANT: Use the ITEM menu to rotate the hexagon Z-axis 30 degrees so that flat faces are bisected by the green Y axis lines, and points are along the red X axis line. Then apply all transforms to it (ctrl-A)
+
+IMPORTANT: From the "Numpad-3" side view, go into edit mode and grab the faces of the bottom of the hexagon and drag them westward so that the angle of the hexagon sides tilts at 76.50 degrees to match the angle of the hexagon light sconces on the model stand. Here is how to show that angle with enough decimal points:
+- In blender preferences, under Add-Ons, search for and enable the addon: "3D View: MeasureIt"
+- In edit mode
+- Select Vertex Selection tool
+- Select three vertices, in this order: (1) click left top hexagon corner, hold shift, (2) click right top hexagon corner, hold shift, (3) click right bottom hexagon corner. You are selecting these vertices of the hexagon (as viewed from above):
+     /\
+    /  \
+   /    \
+   |    |
+   |    |
+ 1 \    / 2
+    \  /   3
+     \/
+- Select the View tab in the view panel options on the right edge of the playfield.
+- Expand "MeasureIt Tools", press SHOW, press ANGLE.
+- It should currently show an angle of 90 degrees before you make any changes to the hexagon's shape. If not, you've selected the wrong vertices.
+- Use edit mode tools, switch to Face select mode, select all of the bottom edge faces, then using the side view (Numpad 3) G-drag those bottom faces westward (press y to constrain to y)
+- As you drag westward (Y) the number should change, if it does not, fiddle with the MeasureIt Tools some more, maybe pressing Show, Angle, again, and/or reselecting those vertices to get it to stay up. Not sure what order I did those steps in, but I eventually got the angle of those three vertices to stay on screen while I dragged.
+- Drag until you make the angle read 76.50.
+- Hide MeasureIt Tools.
+
+Angled slice-off of the base:
+- Back in Object mode
+- Create a large 50m cutter cube, angle it -25 degrees
+- NAME: "Base Angle Cutter"
+- Use the side view (numpad 3)
+- Switch to wire frame view mode.
+- Position the cube so that it intersects the inner angle between the rear ceiling and wall. 
+- Boolean diff the hexagonal base with that angled cube.
+- Check and see if the boolean looks right (the hexagon base edges must still be solid. If not, try an EXACT bool instead of a FAST bool.
+- Once it looks right, hide the angled cutter cube.
+- APPLY THE BOOL and delete the cutter cube.
+
+Create a cube for cleaning up the bottom sections of the tubes later:
+- Create a oversized cutter cube, do not rotate it.
+- NAME: "Tube Cutter Base"
+- Use the side view (numpad 3)
+- Switch to wire frame view mode
+- Perform the same "76.50 Angle" procedure on this cube as you did on the hexagon base.
+- From the side view (numpad 3)...
+- Move the cube in the Z direction so that its top surface falls just barely within the flat ceiling of the hexagon base interior.
+- Move the cube in the Y direction westward so that its eastward face falls just barely within the east wall of the hexagon base interior.
+- Make it a child of the "Base" hexagon. How to child an object:
+  - Select the child object (in this case the cutter cube).
+  - Select the parent object (in this case the base hexagon).
+  - Press CONTROL-P for "parent"
+  - Choose "Object"
+  - Make sure the "Keep transform" tickybox is UNchecked.
+- Once parented, hide the cutter cube.
+- Do this for both bases.
+
+---------------
+Tubes:
+---------------
+Outer diameter: 16.76
+Wall Thickness: 0.85
+
+Tube creation steps:
+- Add, Cylinder
+- Vertices: 128
+- Radius: 8.38
+- Depth: 30
+- Cap fill type: N-Gon
+  - Add inset recess to top of large tube for press-fitting the lens.
+    - Aiming for diameter of 15.06 radius of 7.53 on the recess which makes the edge lip thickness 0.85
+    - In Edit Mode, select top face and press I (inset) and drag to make the inset. Enter thickness value of 0.85 in the dialog.
+    - With the inner flat face still selected, press E (extrude) and drag down (Z constraint will likely be activated automatically by default). Enter -2m in the Z box in the dialog.
+Cutter:
+- Add, Cylinder
+- Vertices: 128
+- Radius 7
+- Depth: 40
+- Cap fill type: N-Gon
+
+Do not delete the cutters, make them a CHILD of the tube so that it moves and rotates with the tube. The reason for this is so that you can also use it to cut the holes in the base and the other angled tubes.
+- Select the cutter tube (child)
+- SHIFT-select the main tube (parent)
+- Press CTRL-P to set the parent.
+  - Set parent to "Object".
+  - Make sure the "Keep transform" tickybox is UNchecked.
+
+-------------------
+NOTE: Other Cutters
+-------------------
+I also added secondary and tertiary cutters, and lens dome cutters, to handle the ways that the lenses tend to overlap each other once they were correctly positioned. This was tricky and too much to detail here. 
+
+------------------
+Add Tube Booleans
+------------------
+These are all Difference bools, Solver: Fast, DO NOT "APPLY" ANY OF THESE, LEAVE THEM LIVE. Check that each one of these booleans looks correct and that the geometry didn't get glitched up. If there are glitches, see if "Solver: Exact" fixes the glitch, but generally try to leave them on the Fast solver if possible.
+
+- Each tube:
+  - Cutter tube corresponding to that tube.
+  - Primary and secondary cutter tubes from OTHER tubes residing in the same base.
+  - Front tube only: Tertiart cutter cube.
+  - "Tube Cutter Base" for that base.
+- Hexagonal base:
+  - Primary and secondary cutter tubes from all tubes which reside in the same base.
+
+------------------
+Organization
+------------------
+Make each of the tubes a CHILD of their base, using the parenting procedures described above. Hierarchy should be like this:
+  Base Center
+    Center Tube Cutter Base
+    Center Back
+      Center Back Cutter
+      Center Back Lens Dome Cutter
+      Center Back Secondary Cutter
+    Center Front
+      Center Front Cutter
+      Center Front Secondary Cutter
+      Center Tertiary Cutter
+(And then the same pattern for the left unit.)
+
+--------------------
+Mirror the Left Unit
+--------------------
+- Shift-A (add)
+- Empty->Main Axis
+- Move that Empty object along the X axis so that it's away from the center of the world, and is to the side of the object you want to mirror. Move it to where you want the "hinge rotation point" of the mirror to exist, next to the base object.
+- How to mirror an object:
+  - Select the base object that you want to mirror.
+  - Add modifier: "Mirror".
+  - Select the "Mirror Object" field of that modifier, choose that "Empty" object that you just created and positioned a moment ago.
+  - Select the AXIS of the mirror, it should be the axis along which you placed that Empty object.
+  - A perfect mirror copy of the object should now be sitting next to the 
+- Repeat the mirroring procedure for all three objects (base, front tube, back tube).
+
+-------------------------------------------------------------------
+Tube angles at time of this writing (might be changed, check this):
+-------------------------------------------------------------------
+Center light tubes:
+Center front:
+-65 degrees X axis
+Center back:
+-23 degrees X axis
+
+Left light tubes:
+Left front:
++52 degrees Y axis, -3 degrees Z axis
+Left back:
++16 degrees X axis, +6 degrees Y axis, +8 degrees Z axis
+
+If changing the tube angles, recheck the following:
+- Lenses will not intersect each other physically.
+- Tube cutters are all doing what they are supposed to be doing and nothing is cut less or more than it should be. May have to adjust the bottom polygon of each tube or cutter so that everything works correctly again.
+
+-----------------------
+Exporting for printing:
+-----------------------
+
+Temporarily rotate the bases for the purpose of printing straight to the print bed without any supports:
+
+- Select the Base hexagon object for the Center base. Make sure nothing else is selected.
+- In the ITEM panel, edit "Rotation:"" X axis only, 25 degrees.
+- This should put the bottom of the hexagon flat parallel with the bottom world plane. The tubes should go along with it if the parenting process was done correctly.
+- Repeat this for the Left base. Its mirror should follow along as well.
+- Export all the printable objects (two bases and their tubes, plus the mirror of the left base).
+- Export as STL, then UNDO THE ROTATION before saving and closing Blender.
+
+--------
+PRINTING
+--------
+Print with a resin printer.
+Print using black-colored ABS-Like resin.
+Print with NO SUPPORTS, just go straight to the print bed.
+
+
+

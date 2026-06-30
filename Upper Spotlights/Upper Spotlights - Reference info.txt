@@ -1,0 +1,65 @@
+-----------------------------------------------------------------------------
+Tomy Refit Enterprise, base light lens focusers, lens holders for 3D printing
+
+             Blender creation notes and reference information
+-----------------------------------------------------------------------------
+                          Upper Spotlight Set
+-----------------------------------------------------------------------------
+
+Designed to fit a set of 15mm x 5mm lenses, similar to these:
+- https://www.amazon.com/dp/B0BR5PMGWD
+- https://www.amazon.com/dp/B0B2X662B8
+
+Outer diameter: 15.08mm
+Inner diameter: 13mm
+Height: 5.8mm
+Side thickness: 1.3mm
+Dome diameter: 13.0402mm
+Lip thickness: 1.81mm
+Focal length: 10mm
+
+Measurement note:
+- All measurements below are in Millimeters in the real world, but in Blender these values will show as Meters. They will be automatically converted to millimeters when the STL file is imported into the slicer. (At least, Chitubox works that way, not sure about others.)
+
+
+
+Measurements - Snap-in Rail Holders
+-----------------------------------
+
+RGBW LED strip total thickness (max protrusion distance from back plate where it's peel-stickered onto the back plate): 1.9
+RGBW LED strip width: 10
+RGBW LED strip gap between two LEDs: supposedly 12 but maybe a hair smaller.
+RGBW LED block diameter: supposedly 4.6666666 but maybe a hair bigger. Doing 4.8 in my model simulation.
+RGBW LED strip center distance between two LEDs: 16.66666666
+
+Rail channel width at back plate: 12.2
+Rail channel width above the notch: 12.8
+Rail channel width inside the notch: 13.2 half of which is 6.6
+Rail channel max depth from outer edge: 9.6
+Rail channel notch center distance from back plate: 5.95
+Rail channel 45 degree bevel distance from notch center to edge of bevel: 2.65
+
+Polymer Optics Hexagonal Collimators:
+- Diameter, flat hexagon sides: 12.9
+- Diameter, pointy hexagon sides: 14.9
+- Depth: 10
+- Depth of flat hexagon cuts on the sides of the dome: 5mm widest, 3.3mm narrowest
+- Hole diameter in dome: 6mm at extreme edge, I'm making my inserts 5.8mm diameter to ensure they fit.
+- Hole depth in dome (center of reverse dome inside hole) - Hard to measure. Anywhere from 1.8-3.3mm I think. I went with 2.1 mm for my inserts and it worked out OK. The inserts could have been a hair deeper but this was good enough.
+
+
+Measurements - Gobos for Snap-in Rail Holders
+---------------------------------------------
+Gobo primary, stuck to the back of the first lens: 15.08mm (1.508cm) outer circle size.
+Cricut design files for cutting gobos:
+https://design.cricut.com/landing/project-detail/69b8c28240372784c3de23df
+
+
+--------
+PRINTING
+--------
+Print with a resin printer.
+Print using black-colored ABS-Like resin.
+Print with NO SUPPORTS, just go straight to the print bed.
+Print multiple sets: the upper spotlights only create one spot per lens.
+
