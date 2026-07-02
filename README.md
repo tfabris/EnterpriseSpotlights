@@ -217,9 +217,9 @@ The lower lens holders are not aimable. They have been pre-aimed based on my par
 
 If changing the lens tube angles in the Blender file, recheck the following before exporting and reprinting:
 - Before editing, make sure that the "Transform Orientation" menu (top center) is set to "Local". The tube angles must all be locally rotated in their child relationship to the flat tops of the hexagonal bases. 
-- Since the bases are already rotated X=25° for printing, then before editing, rotate the bases to X=0°, then do your editing, then put them back to X=25° for printing again.
+- Since the bases are already rotated X=25° for printing to the bed, then before editing, rotate the bases to X=0°, then do your editing, then put them back to X=25°, so that their bases lay flat to the print bed for exporting and printing.
 - When editing, ensure the lenses will not intersect each other physically, they are all very close to each other.
-- When editing, ensure the lens tubes and "cutter" parts are all working correctly for all their boolean operations, for example, nothing is cut less or more than it should be (the cutter parts are hidden, and buried in the item hierarchy inside other objects). It may be necessary to adjust the bottom polygon of each tube or cutter, so that everything works correctly again after the angles are changed.
+- When editing, ensure the lens tubes and "cutter" parts are all working correctly for all their boolean operations, for example, nothing is cut less or more than it should be (note that the boolean cutter parts are hidden, and buried in the item hierarchy inside other objects). It may be necessary to adjust the bottom polygon of each tube or cutter, so that everything works correctly again after the angles are changed.
 
 #### Aiming Upper Spotlights:
 
