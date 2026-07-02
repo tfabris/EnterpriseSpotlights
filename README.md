@@ -50,9 +50,11 @@ I'm using four spotlight assemblies on the top side of my model, one spotlight e
 
 ### Lower Spotlights:
 
-My Refit Enterprise is the Tomy brand die-cast replica, released in 2026. That model comes with a special display stand which includes three LED sconces which already light the model from below. I merely needed to add some lenses to the base, to focus their LEDs a little more.
+My Refit Enterprise is the Tomy brand die-cast replica, released in 2026. That model comes with a special display stand which includes three LED sconces which already light the model from below. I merely needed to add some lenses to the base, to focus their LEDs a little more, via small 3D-printed holders.
 
-For the lower ones, I was able to use two lenses per sconce, one lens per spotlight, with no gobos required. By carefully positioning the two lenses near each LED on the base, two spotlights can be generated per LED. So I get six total spotlight effects out of the base of the Tomy model: Four on the underside of the saucer, and two more on the secondary hull pennants which also spill onto the dorsal connector.
+These lower lens holders are specifically shaped to fit the Tomy base. For something like a Polar Lights kit, I would probably need to set up something more akin to the upper lens assemblies.
+
+I was able to use two lenses per sconce, one lens per spotlight, with no gobos required. By carefully positioning the two lenses near each LED on the base, two spotlights can be generated per LED. So I get six total spotlight effects out of the base of the Tomy model: Four on the underside of the saucer, and two more on the secondary hull pennants which also spill onto the dorsal connector.
 
 ![Beauty Shot](Photos/Saucer%20Low.jpg)   
 
