@@ -213,17 +213,17 @@ Making Adjustments
 
 #### Aiming Lower Spotlights:
 
-The lower lens holders are not aimable. They have been pre-aimed based on my particular model. I expect that all of the Tomy Enterprises should have the same base shape and LED positions, but there's no way for me to tell if other models will be slightly different. If modifications are needed, change the lens tube angles on the lower spotlights in the original Blender file "Lower Spotlights.blend" (Blender expertise required for this).
+The lower lens holders are not aimable. They have been pre-aimed based on my particular model. I expect that all of the Tomy Enterprises should have the same base shape and LED positions, but there's no way for me to tell if other models will be slightly different. If modifications are needed, change the lens tube angles on the lower spotlights in the original Blender file "Lower Spotlights.blend" (Blender expertise required for this) and then re-export and re-print the parts.
 
 If changing the lens tube angles in the Blender file, recheck the following before exporting and reprinting:
 - Before editing, make sure that the "Transform Orientation" menu (top center) is set to "Local". The tube angles must all be locally rotated in their child relationship to the flat tops of the hexagonal bases. 
-- Since the bases are already rotated X=25° for printing to the bed, then before editing, rotate the bases to X=0°, then do your editing, then put them back to X=25°, so that their bases lay flat to the print bed for exporting and printing.
-- When editing, ensure the lenses will not intersect each other physically, they are all very close to each other.
+- Optional: Since the bases are already rotated X=25° for printing to the bed, then before editing, rotate the bases to X=0°, then do your editing, then put them back to X=25°, so that their bases lay flat to the print bed for exporting and printing.
+- When editing, ensure the lenses will not intersect each other physically, since they are all very close to each other.
 - When editing, ensure the lens tubes and "cutter" parts are all working correctly for all their boolean operations, for example, nothing is cut less or more than it should be (note that the boolean cutter parts are hidden, and buried in the item hierarchy inside other objects). It may be necessary to adjust the bottom polygon of each tube or cutter, so that everything works correctly again after the angles are changed.
 
 #### Aiming Upper Spotlights:
 
-First, ensure that the spotlights are getting the full brightness out of their LEDs. Slide each spotlight assembly slightly left and right along the channel (they should be fitting very tightly but still moveable). View the projected image of the LED shining through the spotlight, to tell whether the spotlight is perfectly centered and at its brightest.
+First, ensure that the spotlights are getting the full brightness out of their LEDs. Slide each spotlight assembly slightly left and right along the LED rail channel (they should be fitting very tightly but still moveable). View the projected image of the LED shining through the spotlight, to tell whether the spotlight is perfectly centered and at its brightest.
 
 Once centered, rotate, aim, and focus each spotlight until it's positioned perfectly on the model. I try to defocus my spotlights ever-so-slightly, to give them a soft edge on the model. Focusing is done by sliding the focusing lens slightly in or out.
 
