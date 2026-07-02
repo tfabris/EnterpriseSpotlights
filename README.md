@@ -46,15 +46,21 @@ That's where these 3D prints come in: The 3D printed lens holders snap into thes
 
 To get the special "shapes" of the spotlights (rounded triangles at the front for the top of the saucer, ellipses at the rear for the nacelles), my system uses [gobos](https://en.wikipedia.org/wiki/Gobo_(lighting)) to create the shapes. The gobos in this case are black vinyl stickers, cut to shape on a Cricut machine.
 
-I'm using four spotlight assemblies on the top side of my model, one spotlight each: Saucer top front, saucer top rear, warp pylon starboard top, and inboard starboard warp nacelle.
+I'm using four spotlight assemblies on the top side of my model, one spotlight each, aimed at the following locations.
+- Saucer top front, on the large nameplate and registration number.
+- Saucer top rear, on the small nameplate just aft of the windows of the observation lounge.
+- Warp pylon, starboard top.
+- Warp nacelle, starboard rear, on the registration number the on end tip of the nacelle. Inboard only, because the Tomy collectible already illuminates the outboard ones using self-lighting (thank you, Tomy).
 
 ### Lower Spotlights:
 
-My Refit Enterprise is the Tomy brand die-cast replica, released in 2026. That model comes with a special display stand which includes three LED sconces which already light the model from below. I merely needed to add some lenses to the base, to focus their LEDs a little more, via small 3D-printed holders.
+My Refit Enterprise is the Tomy brand die-cast replica, released in 2026. That model comes with a special display stand which includes three LED sconces which already light the model from below. I merely needed to add some lenses to the base, to focus their LEDs a little more, via small 3D-printed holders. The holders slip onto the existing hexagonal light sconces in the base.
 
 Note that these lower lens holders are specifically shaped to fit the Tomy base. For some other model, such as a Polar Lights kit, these won't work. If I had one of those models, I would probably need to generate the lower spotlights the same way as the upper ones.
 
-For this Tomy base, I was able to use two lenses per sconce, one lens per spotlight, with no gobos required. By carefully positioning the two lenses near each LED on the base, two spotlights can be generated per LED. So I get six total spotlight effects out of the base of the Tomy model: Four on the underside of the saucer, and two more on the secondary hull pennants which also spill onto the dorsal connector.
+For this Tomy base, I was able to use two lenses per sconce, one lens per spotlight, with no gobos required. By carefully positioning the two lenses near each LED on the base, two spotlights can be generated per LED. So I get six total spotlight effects out of the base of the Tomy model.
+- Front-center sconce: Focuses two spotlights on the centerline of the saucer. Forward lens focuses on the registration number, rearward lens focuses on the "Enterprise" nameplate just ahead of the dorsal connector.
+- Left and right sconces: Each one focuses two spotlights, one aiming forward to create the side-spotlights on the underside of the saucer, and one facing the pennants on the sides of the secondary hull (with some overspill onto the dorsal connector).
 
 ![Beauty Shot](Photos/Saucer%20Low.jpg)   
 
