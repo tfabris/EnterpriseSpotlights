@@ -197,6 +197,8 @@ Assembly
 
 - Adjust the position of the spotlight along the rail until it is centered above the desired LED. The spotlight should be moveable by sliding along the rail (although it is a tight fit).
 
+- The bottom tip of collimator will only barely clear the top surface of the LEDs stuck onto the rails. If you are trying to slide the spotlight along the rail and it's stuck, check if it might be the collimator getting hung up on an LED.
+
 #### Assemble Lower Spotlights:
 
 - Press-fit two lenses into each of the three lower lens holders. Ensure the lenses are fully seated in the holders, but be careful not to break the fragile resin-printed holders when press-fitting.
