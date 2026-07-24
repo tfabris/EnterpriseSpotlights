@@ -85,6 +85,10 @@ Required Materials
     - https://www.amazon.com/dp/B0BR5PMGWD
     - https://www.amazon.com/dp/B0B2X662B8
     - Make sure to purchase enough lenses: Each spotlight assembly requires two lenses, and it is wise to get extras. I am using a total of 14 lenses (4 upper lens pairs and 3 lower lens pairs).
+  - Polymer Optics 12° 15 mm Circular Beam Optic Collimators (either clear or diffused, I recommend diffused):
+    - https://luxeonstar.com/product/120-180/
+    - https://luxeonstar.com/product/185-180/
+    - Make sure to purchase enough collimators: Each upper spotlight assembly requires one collimator, and it is wise to get extras. I am using four collimators for the four upper spotlights.
   - Black vinyl Cricut material:
     - https://www.amazon.com/dp/B0032JJS5O
   - Environmental Lights CS110-2m-B 45° LED strip channel rails, black anodized, end caps sold separately:
@@ -92,14 +96,12 @@ Required Materials
     - https://www.environmentallights.com/19364-el-cap-155-b.html
   - BTF-Lighting RGBW SK6812 LED strip, 60 Pixels/m:
     - https://www.amazon.com/dp/B079ZW1265
-  - Polymer Optics 12° 15 mm Circular Beam Optic Collimators (either clear or diffused, I recommend diffused):
-    - https://luxeonstar.com/product/120-180/
-    - https://luxeonstar.com/product/185-180/
-    - Make sure to purchase enough collimators: Each upper spotlight assembly requires one collimator, and it is wise to get extras. I am using four collimators for the four upper spotlights.
   - Power supply and lighting controller. A large variety of options are available to power and control the LED strips. It is a complicated subject; the short version is: I'm using a Mean Well LRS-200-5 200W 5V 40-amp power supply to drive several meters worth of LED strips, and an Arduino Mega 2560 to control them:
     - https://www.amazon.com/dp/B0131V99BA
     - https://www.amazon.com/dp/B07TGF9VMQ
     - ***Note:*** Don't try to drive more than a handful of LEDs "directly" off of an Arduino, without a separate power supply. For LED strips of any length, a proper power supply is required, to prevent frying the Arduino board.
+  - Add fuses to the LED lines to prevent fires:
+    - https://quinled.info/2019/02/18/use-fuses-for-increased-safety/
 
 ### Software:
 
