@@ -100,7 +100,10 @@ Required Materials
     - https://www.amazon.com/dp/B0131V99BA
     - https://www.amazon.com/dp/B07TGF9VMQ
     - ***Note:*** Don't try to drive more than a handful of LEDs "directly" off of an Arduino, without a separate power supply. For LED strips of any length, a proper power supply is required, to prevent frying the Arduino board.
-  - Add fuses to the LED lines to prevent fires:
+  - Black cable channels 2 x 39 inches each:
+    - https://www.amazon.com/D-Line-Raceway-1D3015B-Surface-Electrical/dp/B09CKV1YGH
+  - Blue Sea System ST Blade Fuse Block, 6 Circuit:
+    - https://www.amazon.com/dp/B006VELERM  
     - https://quinled.info/2019/02/18/use-fuses-for-increased-safety/
 
 ### Software:
