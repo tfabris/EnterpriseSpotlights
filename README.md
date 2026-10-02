@@ -96,7 +96,7 @@ Required Materials
     - https://www.environmentallights.com/19364-el-cap-155-b.html
   - BTF-Lighting RGBW SK6812 LED strip, 60 Pixels/m:
     - https://www.amazon.com/dp/B079ZW1265
-  - Power supply and lighting controller. A large variety of options are available to power and control the LED strips. It is a complicated subject; the short version is: I'm using a Mean Well LRS-200-5 200W 5V 40-amp power supply to drive several meters worth of LED strips, and an Arduino Mega 2560 to control them. Full details about the shelves and LED strips can be found [here](https://github.com/tfabris/LED-Controller): 
+  - Power supply and lighting controller. A large variety of options are available to power and control the LED strips. It is a complicated subject; the short version is: I'm using a Mean Well LRS-200-5 200W 5V 40-amp power supply to drive several meters worth of LED strips, and an Arduino Mega 2560 to control them. 
     - https://www.amazon.com/dp/B0131V99BA
     - https://www.amazon.com/dp/B07TGF9VMQ
     - ***Note:*** Don't try to drive more than a handful of LEDs "directly" off of an Arduino, without a separate power supply. For LED strips of any length, a proper power supply is required, to prevent frying the Arduino board.
@@ -119,7 +119,7 @@ Required Materials
   - Cricut design files:
     - https://design.cricut.com/landing/project-detail/69b8c28240372784c3de23df
   - Lighting control:
-    - Indivdual LED color controls are required. Either use pre-built lighting control modules or create a custom-coded module. I'm using the FastLED library for the Arduino with my own custom code. Full details of my LED system are here:
+    - Indivdual LED color controls are required. Either use pre-built lighting control modules or create a custom-coded module. I'm using the FastLED library for the Arduino with my own custom code. Full details of my custom LED system are here:
       - https://github.com/tfabris/LED-Controller
 
 
